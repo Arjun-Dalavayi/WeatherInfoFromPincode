@@ -1,0 +1,16 @@
+weather:
+  api:
+    LatAndLonUrl: http://api.openweathermap.org/geo/1.0/zip?zip={zip code},{country code}&appid={API key}
+    weatherInfoUrl:  https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+    key: <openweathermap.org API key>
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/WeatherInfo
+    username: root
+    password: <your database password>
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
